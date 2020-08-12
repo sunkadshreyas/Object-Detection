@@ -169,8 +169,7 @@ if len(results) > 0:
                       (x_min+box_width, y_min+box_height),
                       current_box_color,2)
         
-        current_box_text = '{} : {:.4f}'.format(labels[int(class_numbers[i])],
-                                                confidences[i])
+        current_box_text = '{} : {:.4f}'.format(labels[int(class_numbers[i])],confidences[i])
         
         cv2.putText(image, current_box_text, (x_min, y_min-5), 
                     cv2.FONT_HERSHEY_COMPLEX, 0.7, current_box_color, 2)
