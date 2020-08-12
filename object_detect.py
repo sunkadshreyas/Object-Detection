@@ -140,8 +140,7 @@ for result in output_from_network:
 Step 6 : Non Max Supression
 """                  
 
-results = cv2.dnn.NMSBoxes(bounding_boxes, confidences, minimum_probability,
-                           nonmax_threshold)
+results = cv2.dnn.NMSBoxes(bounding_boxes, confidences, minimum_probability,nonmax_threshold)
 
 """
 Step 7 : Drawing the Bounding Boxes
