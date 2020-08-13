@@ -18,7 +18,9 @@ import time
 """
 Step 1 : Reading RGB Image
 """
-image = cv2.imread('images/dogandcat.jpeg')
+image_path = ''
+
+image = cv2.imread(image_path)
 
 cv2.namedWindow('Original Image', cv2.WINDOW_NORMAL)
 cv2.imshow('Original Image',image)
